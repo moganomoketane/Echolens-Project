@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EchoLens — Capture Your Vision</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+<!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo-mark">◈</span>
+        <span class="brand-text">EchoLens</span>
+      </a>
+
+      <nav class="main-nav">
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#services">Our Services</a>
+  <a href="#portfolio">Our Portfolio</a>
+  <a href="#team">Our Team</a> 
+  <a href="#contact">Contact</a>
+</nav>
+
+
+      <!-- Navbar Book Now button -->
+<div class="actions">
+  <button class="btn primary book-btn" id="bookNowBtn">Book Now</button>
+</div>
+
+  </header>
+
+  <main>
+    <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Capture Your Vision with EchoLens</h1>
+      <p class="lead">Elevate your event with our expert photography, videography, and DJ services. We specialize in creating unforgettable experiences.</p>
+      <div class="hero-actions">
+        <!-- Hero button -->
+        <button class="btn primary book-btn" id="heroBook">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+     <!-- ABOUT -->
+    <section id="about" class="container about">
+      <h2 class="about">About Us</h2>
+      <div class="aboutContent">
+        <div class="aboutText">
+          <p class="muted">EchoLens is a premier provider of photography, videography, and DJ services, dedicated to capturing the essence of your special events.</p>
+        </div>  
+          <div class="aboutImg">
+        <img class="abtImg" src="assets/aboutImg.jpg" alt="" width="30vw">
+      </div>
+        </div>
+       
+      </div>
+      
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+     
+    <section id="services" class="container services-preview">
+  <h2 class="section-title">Our Services</h2>
+
+  <div class="cards-grid">
+    <div class="card service-card">
+      <div class="card-img">
+        <img class="img-card" src="assets/photoCam.jpg" alt="Photography">
+      </div>
+      <h3>Photography</h3>
+      <p>Professional photography for events, portraits and more.</p>
+
+      <input type="checkbox" id="photo-toggle" class="toggle-info">
+      <label for="photo-toggle" class="learn-more">Learn more</label>
+      <div class="extra-info">
+        <p>We offer studio, outdoor, and event photography that captures every moment with elegance and bold storytelling.</p>
+      </div>
+    </div>
+
+    <div class="card service-card">
+      <div class="card-img">
+        <img class="img-card" src="assets/videoCam.jpg" alt="Videography">
+      </div>
+      <h3>Videography</h3>
+      <p>High-quality videography to capture your special moments.</p>
+
+      <input type="checkbox" id="video-toggle" class="toggle-info">
+      <label for="video-toggle" class="learn-more">Learn more</label>
+      <div class="extra-info">
+        <p>Our team creates cinematic videos for weddings, events, and brand stories — shot in 4K with professional editing.</p>
+      </div>
+    </div>
+
+    <div class="card service-card">
+      <div class="card-img">
+        <img class="img-card" src="assets/sound.jpg" alt="Sound Hiring">
+      </div>
+      <h3>Sound Hiring</h3>
+      <p>Experienced DJs to keep your event lively and memorable.</p>
+
+      <input type="checkbox" id="sound-toggle" class="toggle-info">
+      <label for="sound-toggle" class="learn-more">Learn more</label>
+      <div class="extra-info">
+        <p>We provide high-quality sound systems and skilled DJs for events of any size — delivering deep, clear sound and good vibes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<main id="portfolio" class="portfolio-page container">
+  <h1 class="section-title">Our Portfolio</h1>
+
+  <!-- Photography Section -->
+  <section>
+    <h3 class="category-title">Photography</h3>
+    <div class="slider-wrapper">
+      <button class="slider-arrow left">&#10094;</button>
+      <div class="portfolio-slider">
+        <a href="assets/photo 1.jpg" class="glightbox" data-gallery="photography"><div class="portfolio-item"><img src="assets/photo 1.jpg" alt="Photo 1" />
+        </div></a>
+        <a href="assets/photo 2.jpg" class="glightbox" data-gallery="photography"><div class="portfolio-item"><img src="assets/photo 2.jpg" alt="Photo 2" />
+        </div></a>
+        <a href="assets/photo 3.jpg" class="glightbox" data-gallery="photography"><div class="portfolio-item"><img src="assets/photo 3.jpg" alt="Photo 3" />
+        </div></a>
+        <a href="assets/photo 1.jpg" class="glightbox" data-gallery="photography"><div class="portfolio-item"><img src="assets/photo 1.jpg" alt="Photo 4" />
+        </div></a>
+        <a href="assets/photo 1.jpg" class="glightbox" data-gallery="photography"><div class="portfolio-item"><img src="assets/photo 1.jpg" alt="Photo 4" />
+        </div></a>
+        <a href="assets/photo 1.jpg" class="glightbox" data-gallery="photography"><div class="portfolio-item"><img src="assets/photo 1.jpg" alt="Photo 4" />
+        </div></a>
+        <a href="assets/photo 1.jpg" class="glightbox" data-gallery="photography"><div class="portfolio-item"><img src="assets/photo 1.jpg" alt="Photo 4" />
+        </div></a>
+      </div>
+      <button class="slider-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Videography Section -->
+  <section>
+    <h3 class="category-title">Videography</h3>
+    <div class="slider-wrapper">
+      <button class="slider-arrow left">&#10094;</button>
+      <div class="portfolio-slider">
+        <a href="assets/vid 1.mp4" class="glightbox" data-gallery="videography" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 1.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+        <a href="assets/vid 3.mp4" class="glightbox" data-gallery="videography" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 3.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+        <a href="assets/vid 3.mp4" class="glightbox" data-gallery="videography" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 3.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+        <a href="assets/vid 1.mp4" class="glightbox" data-gallery="videography" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 1.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+        
+      </div>
+      <button class="slider-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- DJ & Sound Section -->
+  <section>
+    <h3 class="category-title">DJ & Sound</h3>
+    <div class="slider-wrapper">
+      <button class="slider-arrow left">&#10094;</button>
+      <div class="portfolio-slider">
+        <a href="assets/vid 1.mp4" class="glightbox" data-gallery="dj" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 1.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+        <a href="assets/vid 1.mp4" class="glightbox" data-gallery="dj" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 1.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+        <a href="assets/vid 1.mp4" class="glightbox" data-gallery="dj" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 1.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+        <a href="assets/vid 1.mp4" class="glightbox" data-gallery="dj" data-type="video">
+          <div class="portfolio-item video-item">
+            <video src="assets/vid 1.mp4" muted playsinline></video>
+            <div class="play-icon">&#9658;</div>
+          </div>
+        </a>
+      </div>
+      <button class="slider-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- OUR TEAM -->
+<section id="team" class="container team">
+  <h2>Our Team</h2>
+  <p class="team-intro">Meet the creative minds behind EchoLens — the photographers, videographers, and DJs who bring your moments to life.</p>
+  
+  <div class="team-cards">
+    <!-- Team Member 1 -->
+    <div class="team-card">
+      <img src="assets/team 1.jpeg" alt="John Doe" class="team-img">
+      <h3></h3>
+      <p class="role">Lead Photographer</p>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="team-card">
+      <img src="assets/team 2.jpeg" alt="Jane Smith" class="team-img">
+      <h3>Sebina Matsi</h3>
+      <p class="role">Videographer</p>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="team-card">
+      <img src="assets/team 3.jpg" alt="Afrothentic" class="team-img">
+      <h3>Ananias Mogano</h3>
+      <p class="role">DJ / Sound Hire</p>
+    </div>
+
+    <!-- Add more team members as needed -->
+  </div>
+</section>
+
+   
+
+    <!-- CONTACT -->
+
+<section id="contact" class="container contact">
+  <h2 class="section-title">Contact Us</h2>
+
+  <form id="contactForm" class="contact-form" novalidate>
+    <!-- Name -->
+    <label>
+      <span>Name</span>
+      <input type="text" name="name" placeholder="Your Full Name" required>
+    </label>
+
+    <!-- Phone -->
+    <label>
+      <span>Phone Number</span>
+      <input type="tel" name="phone" placeholder="e.g. +27 73 456 7890" required>
+    </label>
+
+    <!-- Email -->
+    <label>
+      <span>Email Address</span>
+      <input type="email" name="email" placeholder="you@example.com" required>
+    </label>
+
+    <!-- Service Type -->
+    <label>
+      <span>Service Type</span>
+      <select name="serviceType" required>
+        <option value="">-- Select Service --</option>
+        <option value="photography">Photography</option>
+        <option value="videography">Videography</option>
+        <option value="dj-sound">DJ / Sound Hire</option>
+      </select>
+    </label>
+
+    <!-- Event Location -->
+    <label>
+      <span>Event Location</span>
+      <input type="text" name="eventLocation" placeholder="e.g. Sandton Convention Centre, Johannesburg" required>
+    </label>
+
+    <!-- Event Date -->
+    <label class="date-label">
+      <span>Event Date</span>
+      <div class="date-input-wrapper">
+        <input type="date" name="eventDate" required>
+        <i class="fa fa-calendar calendar-icon"></i>
+      </div>
+    </label>
+
+    <!-- Additional Info -->
+    <label>
+      <span>Additional Info</span>
+      <textarea name="additionalInfo" placeholder="Tell us more about your event..." rows="5"></textarea>
+    </label>
+
+    <!-- Submit Button -->
+    <div class="center">
+      <button class="btn primary" type="submit">Send Message</button>
+    </div>
+
+    <p id="contactResult" class="muted" aria-live="polite"></p>
+  </form>
+</section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> EchoLens. All rights reserved.</div>
+      <div class="socials">Instagram • Facebook • Twitter</div>
+    </div>
+  </footer>
+
+  <!-- Simple booking modal -->
+
+<div id="bookModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Book Your Service</h2>
+    <form id="bookForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Service Type</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option value="photographer">Photographer</option>
+        <option value="videographer">Videographer</option>
+        <option value="dj">DJ / Sound Hire</option>
+      </select>
+
+      <label for="location">Event Location</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="date">Event Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="additional">Additional Info</label>
+      <textarea id="additional" name="additional" rows="4"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- GLightbox JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="js/portfolio.js"></script>
+</body>
+
+</html>
