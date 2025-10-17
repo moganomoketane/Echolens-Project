@@ -166,7 +166,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('assets/homepage 1.jpg');
+  background-image: url('assets/homepage 2.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
@@ -926,6 +926,7 @@ body{
     font-size: 0.95rem;
   }
 }
+
 
 
 
