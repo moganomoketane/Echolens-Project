@@ -152,7 +152,7 @@ Zenani	      Content & QA	            Website text content, proofreading, testin
 🌐 **Hosting**
 
 The Echolens website is hosted on Netlify.
-🔗 Live Link: https://echolens.netlify.app
+🔗 Live Link: (https://echolens-project.netlify.app/)
 
 🚀 **Future Improvements**
 
