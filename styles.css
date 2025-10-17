@@ -664,13 +664,39 @@ body{
 
 
 /* footer */
-.site-footer{
-  border-top:1px solid rgba(255,255,255,0.03);
-  padding:22px 0;
-  margin-top:60px;
-  background:transparent;
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 22px 0;
+  margin-top: 60px;
+  background: transparent;
 }
-.footer-inner{display:flex;justify-content:space-between;align-items:center; gap:1rem; color:var(--muted)}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+/* social icons */
+.socials a {
+  color: var(--muted);
+  font-size: 1.2rem;
+  margin: 0 0.4rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--primary-color); /* replace with your site’s accent color */
+  transform: scale(1.1);
+}
+
+.socials i {
+  vertical-align: middle;
+}
+
 
 /* Modal overlay */
 .modal {
@@ -850,4 +876,5 @@ body{
     font-size: 0.95rem;
   }
 }
+
 
