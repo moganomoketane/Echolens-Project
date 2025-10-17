@@ -38,6 +38,8 @@ function initSliders() {
 // ---------------------------
 function initBookModal() {
   const modal = document.getElementById("bookModal");
+  if (!modal) return;
+
   const closeBtn = modal.querySelector(".close");
   const bookButtons = document.querySelectorAll(".book-btn");
   const form = document.getElementById("bookForm");
@@ -71,16 +73,52 @@ function initBookModal() {
 }
 
 // ---------------------------
-// 4. Initialize All Functions
+// 4. Footer Animation Functionality
+// ---------------------------
+function initFooterAnimation() {
+  const footer = document.querySelector('.site-footer.fade-in');
+  if (!footer) return;
+
+  const socials = footer.querySelectorAll('.socials a');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        footer.classList.add('visible');
+
+        // Add staggered delay for each social icon
+        socials.forEach((icon, index) => {
+          icon.style.opacity = '0';
+          icon.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            icon.style.transition = 'all 0.6s ease';
+            icon.style.opacity = '1';
+            icon.style.transform = 'translateY(0)';
+          }, 150 * index); // stagger delay per icon
+        });
+
+        observer.unobserve(footer); // Trigger only once
+      }
+    });
+  });
+
+  observer.observe(footer);
+}
+
+// ---------------------------
+// 5. Initialize All Functions
 // ---------------------------
 function initWebsiteFeatures() {
   initLightbox();
   initSliders();
   initBookModal();
+  initFooterAnimation();
 }
 
 // Run initialization after DOM is loaded
 document.addEventListener('DOMContentLoaded', initWebsiteFeatures);
+
+
 
 
 
